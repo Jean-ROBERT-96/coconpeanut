@@ -5,29 +5,22 @@
     <title>Coco n' Peanut</title>
   </head>
   <body>
-    <h1>Les listes</h1>
-    <p>Les listes HTML vont nous permettrent d'afficher le contenu sous forme de liste à puces ou de listes numérotées.</p>
-    <p>Il existe 2 grands types de liste en HTML : les listes non-ordonnées et les listes ordonnées.</p>
-    <h2>L'élément ul : les listes non ordonnées</h2>
-    <p>Elles sont utilisées si l'ordre dans la liste n'a aucune importance. Elles sont représentées par l'élément HTML <em>ul</em> (pour unordened list) ainsi que des éléments <em>li</em>, chaque balise <em>li</em> représentant un élément de la liste. Visuellement, elles se présentent sous forme de listes à puces.</p>
-    <h3>Exemple</h3>
-    <p>Chaque jour, je mange :</p>
+    <h1>Les images</h1>
+    <p>Les images pour le web sont en mode RVB et résolution de 72 dpi, celles pour le print en mode CMJN et résolution de 300dpi.</p>
+    <p>Les formats utilisés sont :</p>
     <ul>
-      <li>Des big-macs.</li>
-      <li>Des pizzas.</li>
-      <li>Des kebabs.</li>
-      <li>Du KFC.</li>
+      <li>Le format <strong>jpg</strong> : il permet de compresser le poids de l'image tout en gardant une bonne qualité</li>
+      <li>Le format <strong>png</strong> : il gère la transparence, a un très bon taux de compression tout en conservant une bonne qualité d'image.</li>
+      <li>Le format <strong>gif</strong> : c'est un ancien format d'image, qui a l'avantage de permettre l'animation d'images, mais il ne gère que 256 couleurs.</li>
     </ul>
-    <hr>
-    <h2>L'élément ol : les listes ordonnées</h2>
-    <p>Elles sont utilisées si l'ordre dans la liste a de l'importance. Elles sont représentées par l'élément HTML <em>ol</em> (pour ordened list) ainsi que des éléments <em>li</em>, chaque balise <em>li</em> représentant un élément de la liste. Visuellement, elles se présentent sous forme de liste numérotée.</p>
-    <h3>Exemple</h3>
-    <p>Chaque jour, je fais 3 repas :</p>
-    <ol>
-      <li>Le petit-déjeuner</li>
-      <li>Le déjeuner</li>
-      <li>Le dîner</li>
-    </ol>
-    <p>Mais bon, la vérité est que je mange quand j'ai faim donc ce n'est pas forcément vrai...</p>
+    <p>L'élément HTML <em>img</em> permet d'insérer une images en tant que contenu dans une page HTML. L'insertion d'une image comme élément de décoration devra être effectué en CSS.</p>
+    <p>Cet élément utilise plusieurs attributs :</p>
+    <ul>
+      <li>L'attribut <strong>src</strong> : cet attribut est obligatoire et contient le chemin de l'image que l'on souhaite afficher.</li>
+      <li>L'attribut <strong>alt</strong> : cet attribut, bien que non obligatoire, est recommandé pour des raisons d'accessibilité et de référencement naturel. Il contient une description textuelle de l'image.</li>
+      <li>L'attribut <strong>title</strong> : il n'a pas vocation à remplacer l'attribut alt et si les 2 attributs sont définis il est conseillé d'utiliser des valeurs différentes. Il sert à afficher une infobulle au passage de la souris sur l'image.</li>
+      <li>Les attributs <strong>width</strong> et <strong>height</strong> : ils permettent d'indiquer les dimensions intrinsèques de l'image pour s'assurer qu'elle occupe un espace stable lors du chargement.</li>
+    </ul>
+    <img src="images/website.jpg" alt="website.jpg" title="Une image fort sympa.">
   </body>
 </html>
