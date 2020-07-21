@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  color: red;
+}

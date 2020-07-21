@@ -3,27 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Coco n' Peanut</title>
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body>
-    <h1 id="accueil">Les hyperliens</h1>
-    <p>L'élément HTML a (pour anchor) définit un hyperlien vers un autre endroit de la même page, vers une autre page du site web ou vers une page externe sur le Web.</p>
-    <p>Pour créer un lien externe, on va devoir indiquer l’URL complète de la destination du lien.</p>
-    <p>L'élément a utilise plusieurs attributs :</p>
-    <ul>
-      <li>L'attribut <strong>href</strong> : cet attribut est obligatoire et contient l'URL de destination.</li>
-      <li>L'attribut <strong>title</strong> : il sert à afficher une infobulle au passage de la souris sur l'hyperlien.</li>
-      <li>L'attribut <strong>target</strong> : il permet de choisir où va s'ouvrir la page de destination. Un attribut <em>target="_blank"</em> spécifie que le lien s'ouvre dans un nouvel onglet ou une nouvelle page.</li>
-    </ul>
-    <h2>Les types d'hyperliens</h2>
-    <p>Il existe différents types d'hyperliens :</p>
-    <ul>
-      <li>Un site internet : <a href="https://www.google.com">Google</a></li>
-      <li>Une autre page du site internet : <a href="nous_contacter.html">Nous contacter</a></li>
-      <li>Une adresse email : <a href="mailto:jean_robert92@live.fr">Contact</a></li>
-      <li>Un numéro de téléphone : <a href="tel:+33611223344">06 11 22 33 44</a></li>
-      <li>Une ancre sur la page : <a href="#accueil">haut de la page</a>. Ce type de lien est souvent utilisé dans la navigation sur les sites internet one-page ou pour revenir en haut de la page.</li>
-    </ul>
-    <p>Il est aussi possible de mettre un hyperlien sur une image :</p>
-    <a href="https://jrnoria.000webhostapp.com/"><img src="images/website.jpg" alt="website.jpg" title="Une image fort sympa."></a>
+    <h1>Marquage du texte</h1>
+    <h2>La balise mark</h2>
+    <p>L'élément HTML <mark>mark</mark> représente un texte surligné à cause de sa pertinence dans le contexte, par exemple lors d'une recherche d'un mot clé dans le contenu d'un site web. Il ne doit pas être utilisé à des fins de coloration syntaxique, dans ce cas il faudra utiliser l'élement HTML span.</p>
+    <h2>La balise span</h2>
+    <p>L'élément HTML <span>span</span> ne représente rien de particulier. C'est un élément de type inline, càd qu'il occupe l'espace délimité par son contenu, alors qu'un élément de type block occupe toute la largeur de son élément parent.</p>
+    <p>Il s'utilisera généralement avec une <strong>classe</strong> ou un id pour appliquer <span>une mise en forme différente</span> sur une partie d'un texte.</p>
   </body>
 </html>
