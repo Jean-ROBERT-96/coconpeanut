@@ -7,22 +7,88 @@
   </head>
   <body>
     <header>
-      <h1>Abonnement newsletter</h1>
-      <p>Veuillez remplir le formulaire ci-dessous pour recevoir nos informations.</p>
+      <img src="images/logo.png" alt="logo">
+      <h1>Formations web</h1>
+      <h2>Formulaire d'inscription</h2>
+      <p>(*) Veuillez remplir tous les champs obligatoires</p>
     </header>
     <main>
       <section id="formulaire">
         <form method="post">
-          <label>Nom <span>*</span></label>
-          <input type="text" name="nom" value="Jean-Marie Bigard">
-          <label>E-mail <span>*</span></label>
-          <input type="email" name="mail" value="votre-email@domaine.fr">
-          <button type="button" name="envoyer">s'abonner</button>
+          <fieldset>
+            <legend>Coordonnées</legend>
+            <div class="row">
+              <label>Civilité : <span>(*)</span> </label>
+              <div class="box">
+                <input type="radio" name="monsieur" value="monsieur">
+                <label for="monsieur">Monsieur</label>
+                <input type="radio" name="madame" value="madame">
+                <label for="madame">Madame</label>
+              </div>
+            </div>
+            <div class="row">
+              <label>Nom : <span>(*)</span></label>
+              <input type="text" name="nom" value="Nom" class="champ">
+            </div>
+            <div class="row">
+              <label>Prénom : <span>(*)</span></label>
+              <input type="text" name="prenom" value="Prénom" class="champ">
+            </div>
+            <div class="row">
+              <label>E-mail : <span>(*)</span></label>
+              <input type="email" name="mail" value="mail@domaine" class="champ">
+            </div>
+            <div class="row">
+              <label>Téléphone :</label>
+              <input type="tel" name="telephone" value="00.00.00.00.00" class="champ">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Choix des formations</legend>
+            <div class="row">
+              <label>Je m'inscris à : <span>(*)</span></label>
+              <div class="box">
+                <input type="checkbox" name="htmlcss" id="htmlcss">
+                <label for="htmlcss">HTML-CSS</label>
+                <input type="checkbox" name="javascipt" id="javascript">
+                <label for="javascript">Javascript</label>
+                <input type="checkbox" name="nodejs" id="nodejs">
+                <label for="nodejs">Node JS</label>
+                <input type="checkbox" name="mongodb" id="mongodb">
+                <label for="mongodb">MongoDB</label>
+                <input type="checkbox" name="angular" id="angular">
+                <label for="angular">Angular</label>
+                <input type="checkbox" name="react" id="react">
+                <label for="react">React</label>
+              </div>
+            </div>
+            <div class="row">
+              <label>Choix du centre : <span>(*)</span></label>
+              <select name="centre" value="Choix du centre" class="champ" required>
+                <option>--Faire un choix--</option>
+                <option value="villeneuve">Villeneuve d'Asqc</option>
+                <option value="parisxi">Paris XI</option>
+              </select>
+            </div>
+            <div class="row">
+              <label id="remarque">Remarques : </label>
+              <textarea name="remarque" rows="5" cols="50" class="champ"></textarea>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="politique" id="politique">
+              <label for="politique"><span>(*)</span> En soumettant ce formulaire, j'accepte la <a href="https://www.google.fr/">politique de confidentialité</a> du site ; j'accepte que les informations saisies soient exploitées dans le cadre de mon inscription à la formation.</label>
+            </div>
+            <div class="row">
+              <input type="checkbox" name="newsletter" id="newsletter">
+              <label for="newsletter">J'accepte de recevoir la newsletter.</label>
+            </div>
+          </fieldset>
+          <button type="submit" name="envoyer">envoyer</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>&copy; Execice pédagogique par <a href="https://www.google.com">Christiane Dumont</a> </p>
+      <p>&copy; Exercice pédagogique fourni par <a href="https://www.google.fr">Christiane Dumont</a> </p>
     </footer>
   </body>
 </html>
