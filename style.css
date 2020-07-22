@@ -16,7 +16,7 @@ header, main, footer {
   margin: auto;
   padding: 16px;
   width: 90%;
-  max-width: 1024px;
+  max-width: 896px;
 }
 
 header {
