@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body>
-    <h1>Marquage du texte</h1>
-    <h2>La balise mark</h2>
-    <p>L'élément HTML <mark>mark</mark> représente un texte surligné à cause de sa pertinence dans le contexte, par exemple lors d'une recherche d'un mot clé dans le contenu d'un site web. Il ne doit pas être utilisé à des fins de coloration syntaxique, dans ce cas il faudra utiliser l'élement HTML span.</p>
-    <h2>La balise span</h2>
-    <p>L'élément HTML <span>span</span> ne représente rien de particulier. C'est un élément de type inline, càd qu'il occupe l'espace délimité par son contenu, alors qu'un élément de type block occupe toute la largeur de son élément parent.</p>
-    <p>Il s'utilisera généralement avec une <strong>classe</strong> ou un id pour appliquer <span>une mise en forme différente</span> sur une partie d'un texte.</p>
+    <header>
+      <h1>Abonnement newsletter</h1>
+      <p>Veuillez remplir le formulaire ci-dessous pour recevoir nos informations.</p>
+    </header>
+    <main>
+      <section id="formulaire">
+        <form method="post">
+          <label>Nom <span>*</span></label>
+          <input type="text" name="nom" value="Jean-Marie Bigard">
+          <label>E-mail <span>*</span></label>
+          <input type="email" name="mail" value="votre-email@domaine.fr">
+          <button type="button" name="envoyer">s'abonner</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Execice pédagogique par <a href="https://www.google.com">Christiane Dumont</a> </p>
+    </footer>
   </body>
 </html>
